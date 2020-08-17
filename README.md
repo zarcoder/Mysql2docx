@@ -1,6 +1,8 @@
 # Mysql2docx
 自动生成数据库设计文档
+
 与原项目的区别仅仅按照issue里面的提示修改了Mysql2docx.py文件的lower(table_type)
+
 用户也可以自行修改文件运行
 
 ## 安装
