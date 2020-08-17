@@ -28,7 +28,7 @@ class Mysql2docx(object):
 
     def getTables(self,db):
         sql = "select table_name, TABLE_COMMENT from information_schema.tables " \
-              "where table_schema = '%s' and table_type = 'base table'"%self.dbName
+              "where table_schema = '%s' and lower(table_type) = 'base table'"%self.dbName
         cursor=db.cursor()
         cursor.execute(sql)
         data = cursor.fetchall()
